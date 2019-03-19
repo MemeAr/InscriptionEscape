@@ -5,9 +5,9 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Inscription Escape Game TSE') }}</div>
+                <div class="card-header text-white bg-dark">{{ __('Inscription Escape Game TSE') }}</div>
 
-                <div class="card-body">
+                <div class="card-body text-white bg-dark">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -53,7 +53,7 @@
                         </div>
 
 						<div class="form-group row">
-							<label for="cursus"  class="col-md-4 col-form-label text-md-right">Cursus</label> 
+							<label for="cursus"  class="col-md-4 col-form-label text-md-right">Cursus</label>
 							 <div class="col-md-6">
 							<select id="cursus" name='cursus' class="form-control"  >
 								<option selected>Choisissez...</option>
