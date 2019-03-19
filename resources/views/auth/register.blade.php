@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-white bg-dark">{{ __('Inscription Escape Game TSE') }}</div>
+                <div class="card-header text-white bg-dark">{{ __('Inscription Mémé') }}</div>
 
                 <div class="card-body text-white bg-dark">
                     <form method="POST" action="{{ route('register') }}">
