@@ -16,11 +16,11 @@ class RegisterController extends Controller
     public function register(Request $request)
     {
         $this->validator($request->all())->validate();
-        
-        event(new Registered($user = $this->create($request->all())));
-        
 
-        
+        event(new Registered($user = $this->create($request->all())));
+
+
+
         return $this->registered($request, $user)
         ?: redirect($this->redirectPath());
     }
@@ -67,6 +67,7 @@ class RegisterController extends Controller
             'firstname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'cursus' => ['required', 'string', 'max:255'],
+            'session_id' => ['required', 'string', 'max:255'],
         ]);
     }
 
@@ -83,7 +84,9 @@ class RegisterController extends Controller
             'firstname' => $data['firstname'],
             'email' => $data['email'],
             'cursus' => $data['cursus'],
+            'session_id' => $data['session_id'],
+            'team_id' => 3,
         ]);
     }
-    
+
 }
