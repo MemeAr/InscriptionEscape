@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+  <img src="img/logo.png" style="width: 200px; height: 200px;" id="logo">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-white bg-dark">{{ __('Inscription Mémé') }}</div>
+                <div class="card-header text-white bg-dark" style="font-size: 22px; text-align: center;">{{ __('Inscription Escape Game TSE') }}</div>
 
                 <div class="card-body text-white bg-dark">
                     <form method="POST" action="{{ route('register') }}">
@@ -69,7 +70,7 @@
 						</div>
 						</div>
 
-        
+
 						<div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
