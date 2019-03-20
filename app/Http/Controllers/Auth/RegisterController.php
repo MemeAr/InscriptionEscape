@@ -42,7 +42,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/register';
+    protected $redirectTo = '/message';
 
     /**
      * Create a new controller instance.
@@ -84,7 +84,7 @@ class RegisterController extends Controller
             'firstname' => $data['firstname'],
             'email' => $data['email'],
             'cursus' => $data['cursus'],
-          
+
         ]);
     }
 
