@@ -67,7 +67,7 @@ class RegisterController extends Controller
             'firstname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'cursus' => ['required', 'string', 'max:255'],
-            'session_id' => ['required', 'string', 'max:255'],
+
         ]);
     }
 
@@ -84,8 +84,7 @@ class RegisterController extends Controller
             'firstname' => $data['firstname'],
             'email' => $data['email'],
             'cursus' => $data['cursus'],
-            'session_id' => $data['session_id'],
-            'team_id' => 3,
+          
         ]);
     }
 
