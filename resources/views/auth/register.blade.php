@@ -9,7 +9,7 @@
                 <div class="card-header text-white bg-dark" style="font-size: 22px; text-align: center;">{{ __('Inscription Escape Game TSE') }}</div>
 
                 <div class="card-body text-white bg-dark">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route ('register') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -70,7 +70,18 @@
 						</div>
 						</div>
 
-            			
+            <div class="form-group row">
+							<label for="session"  class="col-md-4 col-form-label text-md-right">Session</label>
+							 <div class="col-md-6">
+							<select class="form-control" id="session" name="session" >
+								<option selected>Choisissez...</option>
+                 @foreach ($sessions as $session)
+								<option value="{{ $session->id }}">{{ $session->horaire }}</option>
+								@endforeach
+							</select>
+						</div>
+						</div>
+
 						<div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

@@ -26,3 +26,7 @@ Route::get('/message', function(){
 Route::get('/users', 'UsersController@getAllUsers');
 
 Route::get('/triusers', 'UsersController@triUsers');
+
+Route::get('/test', 'TeamsController@create');
+
+Route::get('/', 'SessionsController@index');

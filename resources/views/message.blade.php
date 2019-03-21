@@ -9,11 +9,11 @@
                 <div class="card-header text-white bg-dark">Merci de participer à l'Escape Game</div>
 
                 <div class="card-body text-white bg-dark">
-
-
-
                     Tu es maintenant inscrit à l'Escape Game de Télécom Saint-Etienne
                     qui aura lui le xx/xx/xx.
+
+                    <p>{{ $valeur }}</p>
+
                 </div>
             </div>
         </div>
