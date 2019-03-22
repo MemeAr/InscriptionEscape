@@ -25,10 +25,12 @@ class TeamsController extends Controller
      */
     public function create()
     {
+
       $users = User::all();
       $count = User::get()->count();
       $nbTeam = ceil($count/5);
-      
+
+
     }
 
     /**

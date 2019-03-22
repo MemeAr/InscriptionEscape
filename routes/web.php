@@ -26,7 +26,10 @@ Route::get('/message', function(){
 Route::get('/users', 'UsersController@getAllUsers');
 
 Route::get('/triusers', 'UsersController@triUsers');
+Route::get('/show', 'UsersController@show');
 
 Route::get('/test', 'TeamsController@create');
 
-Route::get('/', 'SessionsController@index');
+Route::get('/adminTSE', function(){
+    return view ('layouts/admin');
+});
