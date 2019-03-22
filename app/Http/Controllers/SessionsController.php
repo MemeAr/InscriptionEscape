@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
@@ -21,10 +22,6 @@ class SessionsController extends Controller
 
     }
 
-    public function testDeMerde(Request $request) {
-      $valeur = $request->input('session');
-      echo $valeur;
-    }
     /**
      * Show the form for creating a new resource.
      *
@@ -32,7 +29,7 @@ class SessionsController extends Controller
      */
     public function create()
     {
-
+      
 
       }
 

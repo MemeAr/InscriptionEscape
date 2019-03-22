@@ -12,7 +12,7 @@
                     Tu es maintenant inscrit à l'Escape Game de Télécom Saint-Etienne
                     qui aura lui le xx/xx/xx.
 
-                    <p>{{ $valeur }}</p>
+                    
 
                 </div>
             </div>
