@@ -44,7 +44,7 @@ class UsersController extends Controller
             elseif($user->cursus === 'FISA IPSI 1'){
                 array_push($tabFISAIPSI, $user->id);
             }
-            elseif($user->cursus === 'FISE 1 '){
+            elseif($user->cursus === 'FISE 1'){
                 array_push($tabFISE, $user->id);
             }
             elseif($user->cursus === 'L3 Infocom'){
