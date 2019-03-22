@@ -8,7 +8,7 @@
 		<div class="card-header">Equipe n° {{$equipe[0]->team}}</div>
 		<ul class="list-group list-group-flush">
 		@foreach ($equipe as $joueur)
-			<li class="list-group-item">{{$joueur->name}}</li>
+			<li class="list-group-item">{{$joueur->name}} {{$joueur-> firstname }} <span style="color: #74a2ed">{{ $joueur->cursus }}</span></li>
 			@endforeach
 		</ul>
 	</div>
